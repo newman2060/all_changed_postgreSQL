@@ -7,12 +7,13 @@ secrets.yaml
 *.pem
 *.key
 *.crt
+local_settings.py
 
 # Python
-*.pyc
-*.pyo
 __pycache__/
-*.pyd
+*.py[cod]
+*$py.class
+*.so
 .Python
 env/
 venv/
@@ -23,54 +24,58 @@ venv.bak/
 *.egg
 dist/
 build/
+develop-eggs/
+downloads/
+eggs/
 .eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.manifest
+*.spec
 
 # Django
 *.log
 *.pot
-*.py[cod]
 db.sqlite3
 media/
 staticfiles/
-*.DS_Store
-*.sqlite3
-*.pyc
-*.pyo
-*.pyd
-*.coverage
-.coverage.*
+*/migrations/
+
+# Testing và Coverage
+.coverage
+.tox/
+.nox/
+.pytest_cache/
+coverage.xml
+*.cover
+.hypothesis/
 nosetests.xml
-*.coverage
-*.mo
-*.orig
-*.so
-*.swp
+htmlcov/
 
-# Freqtrade
-freqtrade/
-trades/
-backtests/
-hyperopt/
-logs/
-backtest-results/
-*.csv
-*.json
-
-# IDE và editor
-.vscode/
+# IDE và Editor
 .idea/
+.vscode/
 *.sublime-project
 *.sublime-workspace
 *.swp
+*.swo
+*.swn
+*.iml
+*.iws
+*.ipr
 
 # Hệ điều hành
-Thumbs.db
 .DS_Store
+Thumbs.db
 ehthumbs.db
-Icon?
 Desktop.ini
+Icon?
 
-# Thêm các file và thư mục nhạy cảm
+# Các file và thư mục nhạy cảm
 *password*
 *secret*
 *credential*
@@ -80,19 +85,65 @@ Desktop.ini
 *.temp
 *.old
 
-# Loại trừ các file output và dữ liệu
+# Dữ liệu và Output
 output/
 data/
 *.xlsx
 *.xls
+*.csv
+*.json
 *.db
+*.sqlite3
+*.sql
+*.pgsql
 
-# Các file log và debug
-*.log
+# Logs và Debug
 debug/
 logs/
+*.log
+*.out
+*.err
+*.dat
 
-# Các file tạm thời và cache
+# Cache và file tạm thời
 .cache/
 tmp/
 temp/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Môi trường ảo và Packaging
+.Python
+Pipfile.lock
+.python-version
+*.tar.gz
+*.zip
+*.wheel
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Sphinx
+docs/_build/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Freqtrade
+freqtrade/
+trades/
+backtests/
+hyperopt/
+backtest-results/
+
+# Loại trừ thêm
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+*.sqlite3
+*.coverage
+*.mo
+*.orig
