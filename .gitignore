@@ -1,4 +1,5 @@
 # Các file cấu hình và bí mật
+*.code-workspace
 *.env
 *.ini
 config.json
