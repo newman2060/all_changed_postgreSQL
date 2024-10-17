@@ -1,0 +1,97 @@
+# Các file cấu hình và bí mật
+*.env
+*.ini
+config.json
+secrets.yaml
+*.pem
+*.key
+*.crt
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Django
+*.log
+*.pot
+*.py[cod]
+db.sqlite3
+media/
+staticfiles/
+*.DS_Store
+*.sqlite3
+*.pyc
+*.pyo
+*.pyd
+*.coverage
+.coverage.*
+nosetests.xml
+*.coverage
+*.mo
+*.orig
+*.so
+*.swp
+
+# Freqtrade
+freqtrade/
+trades/
+backtests/
+hyperopt/
+logs/
+backtest-results/
+*.csv
+*.json
+
+# IDE và editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+
+# Hệ điều hành
+Thumbs.db
+.DS_Store
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Thêm các file và thư mục nhạy cảm
+*password*
+*secret*
+*credential*
+*token*
+*.bak
+*.tmp
+*.temp
+*.old
+
+# Loại trừ các file output và dữ liệu
+output/
+data/
+*.xlsx
+*.xls
+*.db
+
+# Các file log và debug
+*.log
+debug/
+logs/
+
+# Các file tạm thời và cache
+.cache/
+tmp/
+temp/
